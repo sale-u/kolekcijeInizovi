@@ -16,6 +16,8 @@ public class GlavnaListe {
 		sveIsvasta.add("...");
 		sveIsvasta.add("32");
 		
+		sveIsvasta.add("Mikronezija");
+		
 		String izListe = sveIsvasta.get(1);
 		System.out.println(izListe + "\n=====================");
 		

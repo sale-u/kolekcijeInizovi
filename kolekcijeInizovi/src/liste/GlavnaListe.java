@@ -17,9 +17,12 @@ public class GlavnaListe {
 //		sveIsvasta.add(true);
 //		sveIsvasta.add(2.3);
 
+		
+		
 		// instancirali smo listu sa generickim tipom
 		List<String> sveIsvasta = new ArrayList<String>();
 
+		
 		sveIsvasta.add("32");
 		sveIsvasta.add("Pera");
 		sveIsvasta.add("Sta hocu...");

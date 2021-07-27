@@ -26,7 +26,7 @@ public class GlavnaSet {
 		System.out.println("Trece ime u listi je " + listaImena.get(2));
 		
 		System.out.println("Imena iz liste preko iteratora su: ");
-		Iterator<String> iter = listaImena.iterator();
+		Iterator<String> iter = listaImena.iterator();	// dizemo iterator objekat nad listom
 		while (iter.hasNext()) {
 			String s = iter.next();
 			System.out.println(s);
@@ -44,7 +44,7 @@ public class GlavnaSet {
 		}
 		
 		System.out.println("Imena iz seta preko iteratora su: ");
-		Iterator<String> iterSet = setImena.iterator();
+		Iterator<String> iterSet = setImena.iterator();	// dizemo iterator objekat nad setom
 		while (iterSet.hasNext()) {
 			String s = iterSet.next();
 			System.out.println(s);

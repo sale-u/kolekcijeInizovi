@@ -5,6 +5,8 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Scanner;
 
+import zadatak28072021.Proizvod;
+
 public class GlavnaMape {
 
 	public static void main(String[] args) {
@@ -82,6 +84,7 @@ public class GlavnaMape {
 			System.out.println("Ne postoji taj jmbg u nasoj mapi...");
 		}
 
+		// ************************ ZA DOMACI *************************
 		// napravi klasu Proizvod
 		// -sifra proizvoda -> kljuc
 		// -naziv proizvoda
@@ -89,7 +92,7 @@ public class GlavnaMape {
 		// u glavnoj klasi napravi 3 proizvoda, staviti u mapu korpa
 		// value = ceo objekat Proizvod
 		// izracunaj cenu korpe
-
+		// ********* DOMACI URADJEN U POSEBNOM PAKETU zadatak28072021 ****************
+		
 	}
-
 }

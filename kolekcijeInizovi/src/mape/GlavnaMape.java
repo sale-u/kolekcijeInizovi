@@ -22,6 +22,10 @@ public class GlavnaMape {
 //			System.out.print("Kljuc: " + me.getKey());
 //			System.out.println("\tVrednost: " + me.getValue());
 //		}
+		
+		// *********************** RETURN TO PREVIOUS COMMIT IN GITHUB ******************
+		System.out.println("Proba vracanja na odredjeni commit");
+		// ******************************************************************************
 
 		User u1 = new User();
 		u1.setIme("Pera");

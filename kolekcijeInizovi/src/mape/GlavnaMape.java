@@ -1,6 +1,7 @@
 package mape;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 import java.util.Scanner;
 
@@ -22,9 +23,10 @@ public class GlavnaMape {
 //			System.out.print("Kljuc: " + me.getKey());
 //			System.out.println("\tVrednost: " + me.getValue());
 //		}
-		
-		// *********************** RETURN TO PREVIOUS COMMIT IN GITHUB ******************
-		System.out.println("Proba vracanja na odredjeni commit");
+
+		// *********************** RETURN TO PREVIOUS COMMIT IN GITHUB
+		// ******************
+//		System.out.println("Proba vracanja na odredjeni commit");
 		// ******************************************************************************
 
 		User u1 = new User();
@@ -47,8 +49,26 @@ public class GlavnaMape {
 		mapaUsera.put(u2.getJmbg(), u2);
 		mapaUsera.put(u3.getJmbg(), u3);
 
+		// ********* UBACENA FOR-EACH ZA LISTANJE MAPE ***************
+		System.out.println("Stampamo clanove Map-e kroz for-each petlju:\n" + "=".repeat(50));
+		for (Map.Entry<String, User> clan : mapaUsera.entrySet()) {
+			System.out.print("JMBG kljuc=" + clan.getKey());
+			System.out.print("\tIme=" + clan.getValue().getIme());
+			System.out.println("\tPrezime=" + clan.getValue().getPrezime());
+		}
+		// ********* UBACENA ITERATOR ZA LISTANJE MAPE ***************
+		System.out.println("\nStampamo clanove Map-e kroz iterator:\n" + "=".repeat(50));
+		Iterator<Map.Entry<String, User>> iterMap = mapaUsera.entrySet().iterator();
+		while (iterMap.hasNext()) {
+			Map.Entry<String, User> entry = iterMap.next();
+			System.out.print("JMBG kljuc=" + entry.getKey());
+			System.out.print("\tIme=" + entry.getValue().getIme());
+			System.out.println("\tPrezime=" + entry.getValue().getPrezime());
+		}
+		
+
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("Unesite jmbg: ");
+		System.out.print("\nUnesite jmbg: ");
 		String jmbgUneto = scanner.nextLine();
 		scanner.close();
 
@@ -61,7 +81,7 @@ public class GlavnaMape {
 		} else {
 			System.out.println("Ne postoji taj jmbg u nasoj mapi...");
 		}
-		
+
 		// napravi klasu Proizvod
 		// -sifra proizvoda -> kljuc
 		// -naziv proizvoda
